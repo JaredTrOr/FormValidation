@@ -2,7 +2,7 @@ const emptyField = value => value === '' ? true : false;
 
 const nameValidation = name => {
     const validNameCharacters = /([a-zA-Z])$/
-    return validNameCharacters.test(name) ? null : 
+    return validNameCharacters.test(name) ? '' : 
     'Nombre no valido, por favor revise los caracteres';
 }
 

@@ -54,7 +54,11 @@ function Form(){
         else setPasswordMessage('Campo vacio, Ingrese su contraseña');
     }
 
-    const handleOnClean = () => setData([]);
+    const handleOnClean = () =>{
+        setData([]);
+        setNameMessage(null); setEmailMessage(null); 
+        setUsernameMessage(null); setPasswordMessage(null);  
+    } 
 
     const cleanInputs = (e) => {
         e.target[0].value = null;
